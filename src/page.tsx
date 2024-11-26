@@ -1,4 +1,4 @@
-import LiveHtmlEditor from '@/components/live-html-editor';
+import LiveHtmlEditor from './components/live-html-editor';
 
 export default function Page() {
   return (
