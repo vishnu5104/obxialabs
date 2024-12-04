@@ -48,8 +48,8 @@ function Home() {
                   Build Web3 Games with Ease
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
-                  Create, deploy, and monetize blockchain games without coding.
-                  Join the future of gaming today!
+                  Create, deploy, and monetize blockchain games Join the future
+                  of gaming today!
                 </p>
               </div>
               <div className="space-x-4">
@@ -58,7 +58,7 @@ function Home() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="text-purple-600 border-white hover:bg-white/10"
+                  className="text-purple-600 border-white hover:text-purple-600 hover:bg-gray-100"
                 >
                   Learn More
                 </Button>
