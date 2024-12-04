@@ -1,7 +1,11 @@
 import './App.css';
 
+import { Button } from '@/components/ui/button';
+
 export default function App() {
   return (
-    <h1 className="bg-blue-400 text-3xl font-bold underline">Hello world!</h1>
+    <>
+      <Button>Click</Button>
+    </>
   );
 }
