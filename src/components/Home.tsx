@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Button } from './ui/button';
 export default function Home() {
   const [htmlContent, setHtmlContent] = useState('');
   const [publishUrl, setPublishUrl] = useState('');
@@ -28,7 +29,7 @@ export default function Home() {
         placeholder="Enter your HTML code here"
       />
       <br />
-      <button onClick={handlePublish}>Publish</button>
+      <Button onClick={handlePublish}>Publish</Button>
       {publishUrl && (
         <div>
           <p>Published at:</p>
