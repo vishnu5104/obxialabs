@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-function Home() {
+export default function Home() {
   const [htmlContent, setHtmlContent] = useState('');
   const [publishUrl, setPublishUrl] = useState('');
+
   const handlePublish = async () => {
     try {
-      // Corrected API request URL (use relative path)
-      const response = await axios.post('/api/publish', {
+      const response = await axios.post('http://localhost:5000/publish', {
         html: htmlContent,
       });
+      console.log('Response:', response.data);
       if (response.data && response.data.hash) {
-        setPublishUrl(`/api/${response.data.hash}`);
+        setPublishUrl(`http://localhost:5000/${response.data.hash}`);
       } else {
         console.error('Unexpected response:', response.data);
       }
@@ -39,5 +40,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
