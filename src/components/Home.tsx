@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { CuboidIcon, Gamepad2Icon, CoinsIcon, UsersIcon } from 'lucide-react';
+import Navbar from './Navbar';
 
-function App() {
+function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -12,32 +13,7 @@ function App() {
             ObxiaLabs
           </span>
         </a>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#features"
-          >
-            Features
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#pricing"
-          >
-            Pricing
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#about"
-          >
-            About
-          </a>
-          <a
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#contact"
-          >
-            Contact
-          </a>
-        </nav>
+        <Navbar />
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
@@ -56,10 +32,7 @@ function App() {
                 <Button className="bg-white text-purple-600 hover:bg-gray-100">
                   Get Started
                 </Button>
-                <Button
-                  variant="learnMore"
-                  className="transition-colors duration-200"
-                >
+                <Button className="transition-colors duration-200">
                   Learn More
                 </Button>
               </div>
@@ -153,4 +126,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
