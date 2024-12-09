@@ -1,5 +1,7 @@
+import Labs from '@/components/Labs';
+
 const Studio = () => {
-  return <div>Studio</div>;
+  return <Labs />;
 };
 
 export default Studio;
