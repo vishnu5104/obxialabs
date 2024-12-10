@@ -11,7 +11,7 @@ import { AboutDialog } from '../About';
 import ConfigDialog from '../Config/ConfigDialog';
 import { ProjectBrowser } from '../ProjectBrowser';
 import ExampleList from '../Toolbar/ExampleList';
-import { LoadingPlayground } from './LoadingPlayground';
+import { LoadingPlayground } from './LoadingLabs';
 import { WorkspaceExample } from './WorkspaceExample';
 import { WorkspaceProject } from './WorkspaceProject';
 
