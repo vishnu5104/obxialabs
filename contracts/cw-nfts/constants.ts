@@ -1,1 +1,0 @@
-export const CONTRACT_ADDRESS = 'xion1wkcm2252r2f4s0l3vtydkpc4ut2ludqlph98je0qzxj2s0jjcmsstzfgv7'
