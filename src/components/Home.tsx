@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,8 +10,10 @@ import {
   Users,
   ArrowRight,
 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -28,9 +32,9 @@ export default function Home() {
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#pricing"
+            href="#studio"
           >
-            Pricing
+            Studio
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
@@ -60,7 +64,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-white text-purple-600 hover:bg-gray-100">
+                <Button
+                  className="bg-white text-purple-600 hover:bg-gray-100"
+                  onClick={() => {
+                    router.push('/connect');
+                  }}
+                >
                   Get Started <ArrowRight />
                 </Button>
               </div>

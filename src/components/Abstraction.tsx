@@ -8,21 +8,15 @@ import { Button } from '@burnt-labs/ui';
 import { useEffect } from 'react';
 
 const Abstraction = () => {
-  // Abstraxion hooks
   const {
     data: { bech32Address },
     isConnected,
     isConnecting,
   } = useAbstraxionAccount();
 
-  // General state hooks
   const [, setShow] = useModal();
 
-  // watch isConnected and isConnecting
-  // only added for testing
-  useEffect(() => {
-    console.log({ isConnected, isConnecting });
-  }, [isConnected, isConnecting]);
+  useEffect(() => {}, [isConnected, isConnecting]);
 
   return (
     <main className="m-auto flex min-h-screen max-w-xs flex-col items-center justify-center gap-4 p-4">
