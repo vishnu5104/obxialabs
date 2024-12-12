@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { CuboidIcon as Cube, Gamepad2, Coins, Users } from 'lucide-react';
+import {
+  CuboidIcon as Cube,
+  Gamepad2,
+  Coins,
+  Users,
+  ArrowRight,
+} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -10,7 +16,7 @@ export default function Home() {
         <Link className="flex items-center justify-center" href="/">
           <Gamepad2 className="h-6 w-6 text-purple-600" />
           <span className="ml-2 text-2xl font-bold text-gray-900">
-            GameForge
+            ObxiaLabs
           </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -41,7 +47,7 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-href-r from-purple-600 via-pink-500 href-red-500">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
@@ -49,19 +55,13 @@ export default function Home() {
                   Build Web3 Games with Ease
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
-                  Create, deploy, and monetize blockchain games without coding.
-                  Join the future of gaming today!
+                  Create, deploy, and monetize blockchain games Join the future
+                  of gaming today!
                 </p>
               </div>
               <div className="space-x-4">
                 <Button className="bg-white text-purple-600 hover:bg-gray-100">
-                  Get Started
-                </Button>
-                <Button
-                  variant="outline"
-                  className="text-purple-600 border-white hover:bg-white/10"
-                >
-                  Learn More
+                  Get Started <ArrowRight />
                 </Button>
               </div>
             </div>
@@ -70,28 +70,33 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-gray-900">
-              Why Choose GameForge?
+              Why Choose ObxiaLabs?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex flex-col items-center text-center">
                 <Cube className="h-12 w-12 text-purple-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2">No-Code Building</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Utility-Based Game Framework
+                </h3>
                 <p className="text-gray-600">
-                  Create complex games without writing a single line of code.
+                  Simplify your game development process with Obxia
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Coins className="h-12 w-12 text-purple-600 mb-4" />
                 <h3 className="text-xl font-bold mb-2">Web3 Integration</h3>
                 <p className="text-gray-600">
-                  Seamlessly integrate blockchain and NFTs into your games.
+                  Seamlessly integrate blockchain into your games without
+                  needing to understand its internal workings
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Users className="h-12 w-12 text-purple-600 mb-4" />
-                <h3 className="text-xl font-bold mb-2">Community-Driven</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  NFT Marketplace In-Game Plugin
+                </h3>
                 <p className="text-gray-600">
-                  Join a thriving community of game creators and players.
+                  Game builders can list, trade, and sell their NFTs.
                 </p>
               </div>
             </div>
@@ -102,11 +107,11 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                  Ready href Build Your Dream Game?
+                  Ready to Build Your Dream Game?
                 </h2>
                 <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Join thousands of creators who are shaping the future of
-                  gaming with GameForge.
+                  gaming with ObxiaLabs.
                 </p>
               </div>
               <div className="w-full max-w-sm space-y-2">
@@ -116,14 +121,8 @@ export default function Home() {
                     placeholder="Enter your email"
                     type="email"
                   />
-                  <Button type="submit">Sign Up</Button>
+                  <Button>Sign Up</Button>
                 </form>
-                <p className="text-xs text-gray-500">
-                  By signing up, you agree href our{' '}
-                  <Link className="underline underline-offset-2" href="#terms">
-                    Terms & Conditions
-                  </Link>
-                </p>
               </div>
             </div>
           </div>
@@ -131,7 +130,7 @@ export default function Home() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500">
-          © 2024 GameForge. All rights reserved.
+          © 2024 ObxiaLabs. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
